@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/cyber.css">
+    <link rel="stylesheet" media="screen and (max-width: 980px)" href="../static/phone.css">
+    <link rel="stylesheet" href="../static/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <script defer src="../static/activePage.js"></script>
+    <!-- <link rel="stylesheet" href="../static/phone.css"> -->
+    <title>Cyber</title>
+</head>
+
+<body>
+    <section id="header">
+        <nav id="navbar2b">
+            <div class="navheading">
+                <img src="../static/BIGLOGO.jpg" alt="">
+                <a href="base.html">
+                    <h1>PrivacyControl</h1>
+                </a>
+            </div>
+            <div class="head" id="head">
+                <ul>
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                    <li class="btnn"><a href="base.html">Home</a></li>
+                    <li class="btnn"><a href="about.html">About</a></li>
+                    <li class="btnn"><a href="service.html">Services </a>
+                        <ul>
+                            <li><a href="password.html">Password Manager</a></li>
+                            <li><a href="index.html">Password Generator</a></li>
+                            <li><a href="index1.html">Password Checker</a></li>
+                            <li><a href="qr.html">QR Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="pages.html">Topics</a>
+                        <ul>
+                            <li><a href="cyber.html">CyberSecurity</a></li>
+                            <li><a href="cyber1.html">Hacking</a></li>
+                            <li><a>DataProtection</a>
+                                <ul>
+                                    <li><a href="cyber2.html">DataBreach</a></li>
+                                    <li><a href="cyber2b.html">DataEncryption</a></li>
+                                    <li><a href="cyber2c.html">DataDiddling</a></li>
+                                    <li><a href="cyber2d.html">DataPhishing</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+
+
+            <div class="hom" data-aos="fade-up">
+                <h1>DATA ENCRYPTION</h1>
+                <div class="h-text">
+                    <a href="base.html">HOME</a> >
+                    <H2>DATA ENCRYPTION</H2>
+                </div>
+
+            </div>
+    </section>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var head = document.getElementById("head")
+        function hideMenu() {
+            head.style.right = "-200px";
+        }
+        function showMenu() {
+            head.style.right = "92px";
+        }
+    </script>
+
+    <section>
+        <div class="cyber" data-aos="fade-up">
+            <h1>What is Data Encryption?</h1>
+            <p>
+
+                Encryption – definition and meaning <br>
+                Encryption in cyber security is the conversion of data from a readable format into an encoded format.
+                Encrypted data can only be read or processed after it's been decrypted.
+                <br><br>
+                Encryption is the basic building block of data security. It is the simplest and most important way to
+                ensure a computer system's information can't be stolen and read by someone who wants to use it for
+                malicious purposes.
+                <br><br>
+                Data security encryption is widely used by individual users and large corporations to protect user
+                information sent between a browser and a server. That information could include everything from payment
+                data to personal information. Data encryption software, also known as an encryption algorithm or cipher,
+                is used to develop an encryption scheme that theoretically can only be broken with large amounts of
+                computing power.
+                <br><br>
+            </p>
+            <h1>How does encryption work?</h1>
+            <p>
+                When information or data is shared over the internet, it goes through a series of network devices
+                worldwide, which form part of the public internet. As data travels through the public internet, there is
+                a chance it could be compromised or stolen by hackers. To prevent this, users can install specific
+                software or hardware to ensure the secure transfer of data or information. These processes are known as
+                encryption in network security.
+                <br><br>
+                Encryption involves converting human-readable plaintext into incomprehensible text, which is known as
+                ciphertext. Essentially, this means taking readable data and changing it so that it appears random.
+                Encryption involves using a cryptographic key, a set of mathematical values both the sender and
+                recipient agree on. The recipient uses the key to decrypt the data, turning it back into readable
+                plaintext.
+                <br><br>
+                The more complex the cryptographic key, the more secure the encryption – because third parties are less
+                likely to decrypt it via brute force attacks (i.e. trying random numbers until the correct combination
+                is guessed).
+                <br><br>
+                Encryption is also used to protect passwords. Password encryption methods scramble your password, so
+                it's unreadable by hackers.
+                <br><br><br>
+            </p>
+            <h1>What are the most common techniques of encryption?</h1>
+            <p>
+                The two most common encryption methods are symmetric and asymmetric encryption. The names refer to
+                whether or not the same key is used for encryption and decryption:
+                <br><br>
+                Symmetric encryption keys: This is also known as private key encryption. The key used to encode is the
+                same as the one used to decode, making it best for individual users and closed systems. Otherwise, the
+                key must be sent to the receiver. This increases the risk of compromise if it's intercepted by a third
+                party, such as a hacker. This method is faster than the asymmetric method.
+                Asymmetric encryption keys: This type uses two different keys — public and private — that are linked
+                together mathematically. The keys are essentially large numbers that have been paired with each other
+                but aren't identical, hence the term asymmetric. The private key is kept secret by the owner, and the
+                public key is either shared amongst authorized recipients or made available to the public at large.
+                Data encrypted with the recipient’s public key can only be decrypted with the corresponding private key.
+                <br><br>
+                Examples of encryption algorithms
+                Encryption algorithms are used to turn data into ciphertext. An algorithm uses the encryption key to
+                alter the data in a predictable way so that, even though the encrypted data will appear random, it can
+                be turned back into plaintext by using the decryption key.
+                <br><br>
+                There are several different types of encryption algorithms designed to suit different purposes. New
+                algorithms are developed when older ones become insecure. Some of the best-known encryption algorithms
+                include:
+                <br><br>
+                DES encryption<br>
+
+                DES stands for Data Encryption Standard. This is a now-outdated symmetric encryption algorithm not
+                considered suitable for today's uses. Therefore, other encryption algorithms have succeeded DES.
+                <br><br>
+                3DES encryption<br>
+
+                3DES stands for Triple Data Encryption Standard. This is a symmetric key algorithm, and the word
+                “triple” is used because data is passed through the original DES algorithm three times during the
+                encryption process. Triple DES is being slowly phased out but still manages to make a dependable
+                hardware encryption solution for financial services and other industries.
+                <br><br>
+                AES encryption<br>
+
+                AES stands for Advanced Encryption Standard and was developed to update the original DES algorithm. Some
+                of the more common applications of AES algorithm include messaging apps such as Signal or WhatsApp and
+                the file archiver program WinZip.
+                <br><br>
+                RSA encryption<br>
+
+                RSA was the first asymmetric encryption algorithm widely available to the public. RSA is popular due to
+                its key length and therefore widely used for secure data transmission. RSA stands for Rivest, Shamir,
+                and Adleman – the surnames of the mathematicians who first described this algorithm. RSA is considered
+                an asymmetric algorithm due to its use of a pair of keys.
+                <br><br>
+                Twofish encryption<br>
+
+                Used in both hardware and software, Twofish is regarded as one of the fastest of its kind. Twofish is
+                not patented, making it freely available to anyone who wants to use it. As a result, you’ll find it
+                bundled in encryption programs such as PhotoEncrypt, GPG, and the popular open-source software
+                TrueCrypt.
+                <br><br>
+                RC4 encryption<br>
+
+                Used in WEP and WPA, which are encryption protocols commonly used in wireless routers.
+                <br><br>
+                Asymmetric encryption examples include RSA and DSA. Symmetric encryption examples include RC4 and DES.
+                As well as encryption algorithms, there is also what is known as Common Criteria (CC):
+                <br><br>
+                This is not an encryption standard, but a set of international guidelines for verifying the product
+                security claims stand up to scrutiny.
+                CC guidelines were created to provide vendor-neutral, third-party oversight of security products.
+                Products under review are submitted voluntarily by vendors, and whole or individual functionalities are
+                examined.
+                When a product is evaluated, its features are tested according to a defined set of standards by product
+                type.
+                Initially, encryption was outside the scope of Common Criteria but is increasingly being included within
+                its security standards.<br><br>
+                Data encryption<br>
+                In transit vs at rest encryption: What’s the difference?
+                Data encryption solutions such as data encryption software and cloud data encryption are often
+                categorized based on whether they are designed for data at rest or data in transit:
+                <br><br>
+                Data encryption in transit<br>
+                Data is considered in transit when moving between devices, such as within private networks or over the
+                internet. During transfer, data is at greater risk because of the need for decryption before transfer
+                and the vulnerabilities of the transfer method itself. Encrypting data during transfer, referred to as
+                end-to-end encryption, ensures that even if the data is intercepted, its privacy is protected.
+                <br><br>
+                Data encryption at rest<br>
+                Data is considered at rest when it sits on a storage device and is not actively being used or
+                transferred. Data at rest is often less vulnerable than when in transit since device security features
+                restrict access, but it is not immune. Additionally, it often contains more valuable information, so it
+                is a more appealing target for thieves.
+                <br><br>
+                Encrypting data at rest reduces opportunities for data theft created by lost or stolen devices,
+                inadvertent password sharing, or accidental permission granting. It increases the time it takes to
+                access information and provides valuable time for the data’s owner to discover data loss, ransomware
+                attacks, remotely erased data, or changed credentials.
+                <br><br>
+                One way to protect data at rest is through TDE. This stands for Transparent Data Encryption and is a
+                technology used by Microsoft, Oracle and IBM to encrypt database files. TDE protects data at rest,
+                encrypting databases both on the hard drive and consequently on backup media. TDE does not protect data
+                in transit.
+                <br><br>
+            </p>
+            <h1>
+                What is end-to-end encrypted data?
+            </h1>
+            <p>
+                A term you often hear concerning data encryption is end-to-end encryption. This refers to systems in
+                which only the two users communicating, who both possess keys, can decrypt the conversation. This
+                includes, for example, even the service provider who cannot access end-to-end encrypted data.
+                Resetting end-to-end encrypted data is possible. On an iPhone, for example, this can be necessary if you
+                forget your password to regain access to your device. If you do this, you won’t be able to use any of
+                the previously encrypted backup files. But you can use iTunes to back up your iOS device again and set a
+                new password for your backed up data.
+                <br><br>
+                Six core benefits of encryption<br>
+                Encryption helps maintain data integrity
+                <br><br>
+                Hackers don't just steal information; they can also alter data to commit fraud. While it is possible for
+                skilled hackers to alter encrypted data, recipients of the data will be able to detect the corruption –
+                allowing for a quick response.
+                <br><br>
+                Encryption helps organizations adhere to regulations<br>
+            
+                Many industries – for example, financial services or healthcare providers – have strict regulations
+                about how consumer data is used and stored. Encryption helps organizations meet those standards and
+                ensure compliance.
+                <br><br>
+                Encryption protects data across devices<br>
+                Most of us use multiple devices in our day-to-day lives, and transferring data from device to device can
+                carry risks. Encryption technology helps protect data across devices, even during transfer. Additional
+                security measures like advanced authentication help to deter unauthorized users.
+                <br><br>
+                Encryption helps when moving data to cloud storage
+                <br>
+                More and more users and organizations are storing their data in the cloud, which means cloud security is
+                essential. Encrypted storage helps to maintain the privacy of that data. Users should ensure that data
+                is encrypted in-flight, while in use, and at rest in storage.
+                <br><br>
+                Encryption helps organizations secure offices
+                <br>
+                Many organizations have remote offices, especially post-pandemic. This can pose cybersecurity risks as
+                data is being accessed from several different locations – encryption helps guard against theft or
+                accidental loss of data.
+                <br><br>
+                Data encryption protects intellectual property.<br>
+
+                Digital rights management systems encrypt data at rest — in this case, intellectual property such as
+                songs or software—to prevent reverse engineering and unauthorized use or reproduction of copyrighted
+                material.
+                <br><br>
+                There are many important uses of encryption<br>
+                Most of us encounter encryption every day. Popular uses include:
+                <br><br>
+                Every time you use an ATM or buy something online with a smartphone, encryption is used to protect the
+                information being relayed.<br><br>
+                Securing devices, such as encryption for laptops.<br>
+                Most legitimate websites use "secure sockets layer” (SSL), which is a form of encrypting data when it is
+                being sent to and from a website. This keeps attackers from accessing that data while it is in transit.
+                Look for the padlock icon in the URL bar and the "s" in the "https://" to ensure you are conducting
+                secure, encrypted transactions online.<br><br>
+                Your WhatsApp messages are also encrypted, and you may also have an encrypted folder on your phone.<br><br>
+                Your email can also be encrypted with protocols such as OpenPGP.<br><br>
+                VPNs – Virtual Private Networks – use encryption, and everything you store in the cloud should be
+                encrypted. You can encrypt your whole hard drive and even make encrypted voice calls.
+                Encryption is used to prove the integrity and authenticity of information using what are known as
+                digital signatures.<br><br> Encryption is an integral part of digital-rights management and copy protection.
+                Encryption can be used to erase data. Since deleted information can sometimes be brought back using data
+                recovery tools, if you encrypt the data first and throw away the key, the only thing that anybody can
+                recover is the ciphertext and not the original data.<br><br>
+                Encryption in cyber security is a way of protecting private information from being stolen or
+                compromised. Another important aspect of online safety is using a high-quality antivirus solution, such
+                as Kaspersky Total Security, which blocks common and complex threats like viruses, malware, ransomware,
+                spy apps, and the latest hacker tricks.
+
+
+            </p>
+        </div>
+    </section>

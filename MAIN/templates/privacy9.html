@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/cyber.css">
+    <link rel="stylesheet" media="screen and (max-width: 980px)" href="../static/phone.css">
+    <link rel="stylesheet" href="../static/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <script defer src="../static/activePage.js"></script>
+    <!-- <link rel="stylesheet" href="../static/phone.css"> -->
+    <title>Cyber</title>
+</head>
+
+<body>
+    <section id="header">
+        <nav id="navbar2m">
+            <div class="navheading">
+                <img src="../static/BIGLOGO.jpg" alt="">
+                <a href="base.html">
+                    <h1>PrivacyControl</h1>
+                </a>
+            </div>
+            <div class="head" id="head">
+                <ul>
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                    <li class="btnn"><a href="base.html">Home</a></li>
+                    <li class="btnn"><a href="about.html">About</a></li>
+                    <li class="btnn"><a href="service.html">Services </a>
+                        <ul>
+                            <li><a href="password.html">Password Manager</a></li>
+                            <li><a href="index.html">Password Generator</a></li>
+                            <li><a href="index1.html">Password Checker</a></li>
+                            <li><a href="qr.html">QR Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="pages.html">Topics</a>
+                        <ul>
+                            <li><a href="cyber.html">CyberSecurity</a></li>
+                            <li><a href="cyber1.html">Hacking</a></li>
+                            <li><a>DataProtection</a>
+                                <ul>
+                                    <li><a href="cyber2.html">DataBreach</a></li>
+                                    <li><a href="cyber2b.html">DataEncryption</a></li>
+                                    <li><a href="cyber2c.html">DataDiddling</a></li>
+                                    <li><a href="cyber2d.html">DataPhishing</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+
+
+
+    </section>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var head = document.getElementById("head")
+        function hideMenu() {
+            head.style.right = "-200px";
+        }
+        function showMenu() {
+            head.style.right = "92px";
+        }
+    </script>
+    <section>
+        <div class="cyber" data-aos="fade-up">
+            <h1>How smartphone makers track users:</h1>
+            <p>A recent study shows that even “clean” Android smartphones collect a lot of information about their owners.</p>
+            <hr style="width: 90%;position: relative; left: 3%;border-top: 1px solid rgba(0, 0, 0, 0.1);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
+            <br><br>
+            <p>System apps — installed on your smartphone by default and usually nonremovable — tend to stay out of the limelight. But whereas with other apps and services users have at least some choice, in this case tracking and surveillance capabilities are stitched into devices’ very fabric.
+                <br><br>
+                The above represent some conclusions of a recent joint study by researchers at the University of Edinburgh, UK, and Trinity College Dublin, Ireland. They looked at smartphones from four well-known vendors to find out how much information they transmit. As a reference point, they compared the results with open-source operating systems based on Android, LineageOS and /e/OS. Here’s what they found.<br><br></p>
+            <h1>Research method</h1>
+            <p>For the purity of the experiment, the researchers set a fairly strict operating scenario for the four smartphones, one users are unlikely ever to encounter in real life: They assumed each smartphone would be used for calls and texts only; the researchers did not add any apps; only those installed by the manufacturer remained on the devices.
+                <br><br>
+                What’s more, the imaginary user responded in the negative to all of the “Do you want to improve the service by forwarding data”–type questions that users typically have to answer the first time they turn on the device. They did not activate any optional services from the manufacturer, such as cloud storage or Find My Device. In other words, they kept the smartphones as private and in as pristine a state as possible throughout the study.
+                <br><br>
+                The basic “spy-tracking” technology is the same in all such research. The smartphone connects to a Raspberry Pi minicomputer, which acts as a Wi-Fi access point. Software Installed on the Raspberry Pi intercepts and decrypts the data stream from the phone. The data is then re-encrypted and delivered to the recipient — the developer of the phone, app, or operating system. In essence, the authors of the paper performed a (benevolent) man-in-the-middle attack.
+                <br><br>
+                The good news is that all transmitted data was encrypted. The industry finally seems to have overcome its plague of devices, programs, and servers communicating in clear text, without any protection. In fact, the researchers spent a lot of time and effort deciphering and analyzing the data to figure out what exactly was being sent.
+                <br><br>
+                After that, the researchers had relatively smooth sailing. They completely erased the data on each device and performed initial setup. Then, without logging in into a Google account, they left each smartphone on for a few days and monitored the transfer of data from it. Next, they logged in using a Google account, temporarily enabled geolocation, and went into the phone’s settings. At each stage, they monitored what data was sent and where. They tested a total of six smartphones: four with the manufacturer’s firmware and two with the LineageOS and /e/OS open-source versions of Android.
+            </p>
+            <h1>Who collects the data?</h1>
+            <p>To absolutely no one’s surprise, the researchers found that smartphone makers were the primary collectors. All four devices running the original firmware (and a set of preinstalled programs) forwarded telemetry data, along with persistent identifiers such as the device serial number, to the manufacturer. Here, the authors of the paper delineate standard firmware from the custom builds.
+                <br><br>
+                For example, LineageOS has an option of sending data to developers (for monitoring programs’ operational stability, for example), but disabling the option stops data transmission. On factory-standard devices, blocking the sending of data during initial setup may indeed reduce the amount of data sent, but it does not rule out data transmission entirely.
+                <br><br>
+                Next up for receiving data are the developers of preinstalled apps. Here, too, we find an interesting nuance: According to Google’s rules, apps installed from Google Play must use a certain identifier to track user activity — Google’s Advertising ID. If you want, you can change this identifier in the phone’s settings. However, the requirement does not apply to apps the manufacturer preinstalls — which use persistent identifiers to collect a lot of data.
+                <br><br>
+                For example, a preinstalled social network app sends data about the phone’s owner to its own servers, even if that owner has never opened it. A more interesting example: The system keyboard on one smartphone sent data about which apps were running on the phone. Several devices also came with operator apps that also collected user-related information.
+                <br><br>
+                Finally, Google system apps warrant a separate mention. The vast majority of phones arrive with Google Play Services and the Google Play Store, and usually YouTube, Gmail, Maps, and a few others already installed. The researchers note that Google apps and services collect far more data than any other preinstalled program. </p>
+                <br><br>
+                <h1>What data gets sent?</h1>
+                <p>In this section, the researchers again focus on identifiers. All data has some kind of unique code to identify the sender. Sometimes, it is a one-time code, which for privacy is the correct way to collect the statistics — for example, on the operational stability of the system — developers find useful.
+                    <br><br>
+                    But there are also long-term and even persistent identifiers that violate user privacy that are also collected. For example, owners can manually change the abovementioned Google Advertising ID, but very few do so, so we can consider the identifier, which is sent to both Google and the device manufacturers, near persistent.
+                    <br><br>
+                    The device serial number, the radio module’s IMEI code, and the SIM card number are persistent identifiers. With the device serial number and the IMEI code, it is possible to identify the user even after a phone number change and complete device reset.
+                    <br><br>
+                    The regular transfer of information about device model, display size, and radio module firmware version is less risky in terms of privacy; that data is the same for a large number of owners of the same phone model. But user activity data in certain apps can reveal a lot about owners. Here, the researchers talk about the thin line between data required for app debugging and information that can be used to create a detailed user profile, such as for targeted ads.
+                    <br><br>
+                    For example, knowing that an app is eating up battery life can be important for the developer and will ultimately benefit the user. Data on which versions of system programs are installed can determine when to download an update, which is also useful. But whether harvesting information about the exact start and end times of phone calls is worthwhile, or indeed ethical, remains in question.
+                    <br><br>
+                    Another type of user data that’s frequently reported is the list of installed apps. That list can say a lot about the user, including, for example, political and religious preferences.<br><br></p>
+                <h1>Combining user data from different sources</h1>
+                <p>Despite their thorough work, the researchers were unable to obtain a complete picture of how various phone and software vendors collect and process user data. They had to make some assumptions.
+                    <br><br>
+                    Assumption one: Smartphone manufacturers that collect persistent identifiers can track user activity, even if said user erases all data from the phone and replaces the SIM card.
+                    <br><br>
+                    Assumption two: All market participants have the ability to exchange data and, by combining persistent and temporary IDs, plus different types of telemetry, create the fullest possible picture of users’ habits and preferences. How this actually happens — and whether developers actually exchange data, or sell it to third-party aggregators — is beyond the scope of the study.
+                    <br><br></p>
+                <h1>Takeaways</h1>
+                <p>The nominal winner in terms of privacy turned out to be the phone with the Android variant /e/OS, which uses its own analog of Google Play Services and didn’t transmit any data at all. The other phone with open-source firmware (LineageOS) sent information not to the developers, but to Google, because the latter’s services were installed on that phone. These services are needed for the device to operate properly — some apps and many features simply do not work, or work poorly, without Google Play Services.
+                    <br><br>
+                    As for the proprietary firmware of popular manufacturers, there is little to separate them. They all collect a fairly large set of data, citing user care as the reason. They essentially ignore users’ opt-out from collecting and sending “usage data,” the authors note. Only more regulations to ensure greater consumer privacy can change that situation, and for now, only advanced users who can install a nonstandard OS (with restrictions on the use of popular software) can eliminate telemetry completely.
+                    <br><br>
+                    As for security, the collection of telemetry data does not appear to pose any direct risks. The situation is radically different from third-tier smartphones, on which malware can be installed directly at the factory.
+                    <br><br>
+                    The good news from the study is that data transmission is fairly secure, which at least makes it hard for outsiders to gain access. The researchers did specify one important caveat: They tested European smartphone models with localized software. Elsewhere, depending on laws and privacy regulations, situations may differ.</p>
+                    <br><br>
+    </section>

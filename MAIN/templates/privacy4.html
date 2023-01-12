@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/cyber.css">
+    <link rel="stylesheet" media="screen and (max-width: 980px)" href="../static/phone.css">
+    <link rel="stylesheet" href="../static/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <script defer src="../static/activePage.js"></script>
+    <!-- <link rel="stylesheet" href="../static/phone.css"> -->
+    <title>Cyber</title>
+</head>
+
+<body>
+    <section id="header">
+        <nav id="navbar2h">
+            <div class="navheading">
+                <img src="../static/BIGLOGO.jpg" alt="">
+                <a href="base.html">
+                    <h1>PrivacyControl</h1>
+                </a>
+            </div>
+            <div class="head" id="head">
+                <ul>
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                    <li class="btnn"><a href="base.html">Home</a></li>
+                    <li class="btnn"><a href="about.html">About</a></li>
+                    <li class="btnn"><a href="service.html">Services </a>
+                        <ul>
+                            <li><a href="password.html">Password Manager</a></li>
+                            <li><a href="index.html">Password Generator</a></li>
+                            <li><a href="index1.html">Password Checker</a></li>
+                            <li><a href="qr.html">QR Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="pages.html">Topics</a>
+                        <ul>
+                            <li><a href="cyber.html">CyberSecurity</a></li>
+                            <li><a href="cyber1.html">Hacking</a></li>
+                            <li><a>DataProtection</a>
+                                <ul>
+                                    <li><a href="cyber2.html">DataBreach</a></li>
+                                    <li><a href="cyber2b.html">DataEncryption</a></li>
+                                    <li><a href="cyber2c.html">DataDiddling</a></li>
+                                    <li><a href="cyber2d.html">DataPhishing</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+
+
+
+    </section>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var head = document.getElementById("head")
+        function hideMenu() {
+            head.style.right = "-200px";
+        }
+        function showMenu() {
+            head.style.right = "92px";
+        }
+    </script>
+    <section>
+        <div class="cyber" data-aos="fade-up">
+            <h1>How to tell if a website is taking your (browser) fingerprints:</h1>
+            <p>Researchers have created an extension to learn about the information websites collect to “fingerprint”
+                browsers.</p>
+            <hr style="width: 90%;position: relative; left: 3%;border-top: 1px solid rgba(0, 0, 0, 0.1);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
+            <br><br>
+            <p>
+                Whether you’re looking at the whorls and loops of a fingertip or analogously unique browser information,
+                using a fingerprint is a highly accurate way to identify someone. It’s a lot harder to get a person’s
+                fingerprint without their knowledge, but all kinds of services on the Internet ID users by their browser
+                “fingerprint” — and not always with your interests in mind.
+                <br><br>
+                A team at Bundeswehr University Munich has developed a browser extension that lets you track which
+                websites collect your browser fingerprints and how they do it. The team also analyzed 10,000 popular
+                websites to see what kind of information they collect. Team member Julian Fietkau’s presentation at the
+                Remote Chaos Communication Congress (RC3) discussed the issue and the team’s work on it.
+            </p>
+            <h1>What is a browser fingerprint?</h1>
+            <p>
+                A browser fingerprint is an assembly of the data that a website can obtain about your computer and
+                browser on request when a page loads. The fingerprint includes dozens of data points, from the language
+                you use and the time zone you’re in to which extensions are installed and your browser version. It may
+                also include information about your operating system, RAM, screen resolution, font settings, and much
+                more.
+                <br><br>
+                Websites collect varying amounts and types of information, using it to generate a unique identifier for
+                you. A browser fingerprint is not a cookie, although it can be used similarly. And, though you have to
+                consent to the use of cookies (you’re probably already tired of closing “our site uses cookies”
+                notifications), taking browser fingerprints does not require consent.
+                <br><br>
+                Moreover, even using Incognito mode won’t stop your browser fingerprint from being taken; almost all
+                browser and device parameters remain the same and can be used to determine that the person browsing is
+                you.
+                <br><br>
+            </p>
+            <h1>How to tell if a site is taking your browser fingerprint</h1>
+            <p>
+                To obtain the information to compile a browser fingerprint, a website sends several requests through
+                embedded JavaScript code to the browser. The aggregate of the browser’s responses makes up its
+                fingerprint.
+                <br><br>
+                Fietkau and his colleagues analyzed the most popular libraries with this kind of JavaScript code,
+                compiling a list of 115 distinct techniques most frequently used to work with browser fingerprints. They
+                then created a browser extension called FPMON that analyzes Web pages to see if they use those
+                techniques and tells the user exactly what data a particular site is trying to collect to compile a
+                browser fingerprint.
+                <br><br>
+                Users with FPMON installed will receive a notification when a website requests such and such information
+                from the browser. Moreover, the team divided the types of information into two categories: sensitive and
+                aggressive.
+                <br><br>
+                The first category includes information that a website may request for legitimate reasons. For example,
+                knowing the browser language enables a site to appear in your preferred language, and information about
+                your time zone is required to show you the correct time. However, that information still might say
+                something about you.
+                <br><br>
+                Aggressive information is irrelevant to the site, most likely used for the sole purpose of putting
+                together your browser fingerprint. It might include the amount of device memory or a list of plugins
+                installed in your browser, for example.
+                <br><br>
+            </p>
+            <h1>How aggressively do sites collect browser fingerprints?</h1>
+            <p>
+                FPMON can detect requests for 40 types of information. Almost all websites ask for at least some
+                information about the browser or device. At what point should we assume that a website is actually
+                trying to take a fingerprint? At what point should you worry?
+                <br><br>
+                The researchers used existing sites such as the EFF’s Panopticlick (aka Cover Your Tracks) project,
+                which the privacy advocacy group created to demonstrate how browser fingerprinting works. Panopticlick
+                requires 23 parameters to work and can identify a user with greater than 90% confidence. Fietkau and his
+                team made 23 parameters their minimum value; at or above that, we can assume a website is tracking
+                users.
+                <br><br>
+                The researchers went through the top 10,000 websites (as ranked by Alexa) and found that most of them —
+                nearly 57% — ask for 7 to 15 parameters, with a median value of 11 parameters for the entire sample.
+                Approximately 5% of the websites didn’t collect a single parameter, and the maximum number collected was
+                38 out of a possible 40. However, only three out of the 10,000 requested that many.
+                <br><br>
+                The websites in their sample used more than a hundred scripts to collect the data, and although very few
+                scripts collected a lot of information from the aggressive category, they’re used on some very popular
+                websites.
+                <br><br>
+            </p>
+            <h1>How to protect against fingerprinting</h1>
+            <p>
+                Two approaches can prevent website scripts from taking your browser fingerprint: blocking them and
+                giving them incomplete or incorrect information. Privacy software uses one method or the other. On the
+                browser side, Safari recently began providing only basic, impersonal information, thus protecting users
+                from tracking through fingerprinting.
+                <br><br>
+                Some organizations have stepped in with browser extensions as well. For example, Privacy Badger, a
+                privacy plugin developed by the EFF, tries to block scripts, although not all of them. For example, the
+                plugin doesn’t affect scripts that request data that may be needed for a page to display correctly or
+                for some of its functions to work (but that can also contribute to a fingerprint).
+                <br><br>
+                We use the same approach in our Kaspersky Protection browser extension, preventing websites from
+                collecting too much user information and, thus, assembling a fingerprint. Kaspersky Protection is part
+                of our main consumer security solutions. Just don’t forget to enable it.
+
+                <br><br>
+            </p>
+    </section>

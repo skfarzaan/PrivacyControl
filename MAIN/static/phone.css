@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* nav section */
+#navbar{
+    /* border-radius: 0px 0px 15px 15px; */
+    height: 125vh;
+}
+.head ul{
+    border-radius: 0px 0px 0px 5px;
+}
+.head ul li{
+    display: block;
+    text-align: left;
+    padding-top: 15px;
+    padding-right: 38px;
+}
+#head{
+    position: fixed;
+    right: -200px;
+    transition: 1s;
+}
+.home-text{
+    left: 0;
+    padding-left: 10px;
+    top: 50%;
+}
+.homeimg img{
+    width: 100%;
+    right: 0;
+    top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+.store .apple img{
+    left: 0%;
+    padding-left: 10px;
+    top: 60%;
+}
+.store .google img{
+    left: 20%;
+}
+#images{
+    flex-direction: column;
+    background-color: black;
+}
+#images .img1{
+    margin: 0px 10px;
+    width: 95%;
+}
+#images .img2{
+    margin: 0px 10px;
+    width: 95%;
+}
+#images .img3{
+    margin: 0px 10px;
+    width: 95%;
+}
+#images .img4 {
+    margin-top: 5px;
+    width: 85%;
+    height: 350px;
+}
+.img1 img{
+    width: 100%;
+    height: 350px;
+    padding: 5px 10px;
+}
+.img2 img{
+    width: 100%;
+    height: 350px;
+    padding: 5px 10px;
+}
+.img3 img{
+    width: 100%;
+    height: 350px;
+    padding: 5px 10px;
+}
+
+/* icons */
+.fa-solid{
+    color: black;
+}
+nav .fa-bars{
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 110px;
+    font-size: 25px;
+}
+nav .fa-xmark{
+    color: white ;
+    display: block;
+    left: 10px;
+    position: relative;
+    font-size: 25px;
+}
+nav .fa{
+    display: block;
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* about section */
+#About{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    height: 140vh;
+}
+.abouttext{
+    width: 95%;
+    margin-left: 10px;
+}
+.aboutimg1{
+    width: 100%;
+    position: relative;
+    /* top: 5%; */
+    right: 0;
+}
+.aboutimg2{
+    position: relative;
+    top: -25%;
+    right: 0;
+}
+.aboutimg1 img{
+    width: 90%;
+}
+.aboutimg2 img{
+    width: 50%;
+    right: 0;
+}
+.about-text1{
+    margin-top: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    width: 50%;
+}
+.about-text2{
+    margin-top: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    width: 50%;
+}
+.about-text h5{
+    margin-bottom: 13px;
+}
+.about-img{
+    padding: 10px;
+    padding-bottom: 0;;
+}
+.about-img img{
+    width: 100%;
+}
+.about-img1 img{
+    position: relative;
+    margin-top: -40px;
+    width: 45%;
+    right: 0;
+    top: 0px;
+}
+#Service{
+    height: 170vh;
+}
+#Service .service p{
+    padding: 0%;
+}
+.container{
+    display: block;
+    height: 110vh;
+    min-width: 0;
+}
+.container1{
+    width: 100%;
+}
+.con1{
+    width: 88%;
+    margin: 30px 30px 20px 20px;
+}
+.con1 h3{
+    padding: 10px;
+}
+
+.con2{
+    width: 88%;
+    margin: 20px 30px 20px 20px;
+}
+.container2{
+    width: 100%;
+}
+.con3{
+    height: 56vh;
+    margin: 10px;
+}
+.con3 h3{
+    padding: 45px 10px 10px 10px;
+}
+.con4{
+    height: 56vh;
+    margin: 10px;
+}
+.con4 h3{
+    padding: 45px 10px 10px 10px;
+}
+#Careers{
+    height: 120vh;
+    margin-top: 402px;
+}
+.c-head{
+    width: 47%;
+}
+.c-text{
+    left: 0;
+    padding-left: 15px;
+}
+.img-1 img{
+   display: none;
+}
+.btn1{
+    position: relative;
+    top: 10%;
+    right: 22px;
+}
+.form{
+    height: 120vh;
+}
+.form1{
+    width: 98%;
+    left: 2px;
+    height: 80vh;
+}
+.t1{
+    padding: 10px;
+    padding-left: 24px;
+}
+.email{
+    width: 90%;
+    padding-left: 27px;
+}
+.email input{
+    width: 97%;
+}
+.form2{
+    width: 95%;
+    left: 10px;
+    top: 55%;
+}
+.email1{
+    width: 93%;
+}
+.space{
+    width: 90%;
+}
+.btn3{
+    display: inline;
+    padding: 12px;
+    position: relative;
+    left: 15px;
+    top: 16px;
+}
+.table{
+    flex-direction: column;
+}
+#Contact{
+    height: 150vh;
+}

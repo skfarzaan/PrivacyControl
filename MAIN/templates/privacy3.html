@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/cyber.css">
+    <link rel="stylesheet" media="screen and (max-width: 980px)" href="../static/phone.css">
+    <link rel="stylesheet" href="../static/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <script defer src="../static/activePage.js"></script>
+    <!-- <link rel="stylesheet" href="../static/phone.css"> -->
+    <title>Cyber</title>
+</head>
+
+<body>
+    <section id="header">
+        <nav id="navbar2g">
+            <div class="navheading">
+                <img src="../static/BIGLOGO.jpg" alt="">
+                <a href="base.html">
+                    <h1>PrivacyControl</h1>
+                </a>
+            </div>
+            <div class="head" id="head">
+                <ul>
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                    <li class="btnn"><a href="base.html">Home</a></li>
+                    <li class="btnn"><a href="about.html">About</a></li>
+                    <li class="btnn"><a href="service.html">Services </a>
+                        <ul>
+                            <li><a href="password.html">Password Manager</a></li>
+                            <li><a href="index.html">Password Generator</a></li>
+                            <li><a href="index1.html">Password Checker</a></li>
+                            <li><a href="qr.html">QR Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="pages.html">Topics</a>
+                        <ul>
+                            <li><a href="cyber.html">CyberSecurity</a></li>
+                            <li><a href="cyber1.html">Hacking</a></li>
+                            <li><a>DataProtection</a>
+                                <ul>
+                                    <li><a href="cyber2.html">DataBreach</a></li>
+                                    <li><a href="cyber2b.html">DataEncryption</a></li>
+                                    <li><a href="cyber2c.html">DataDiddling</a></li>
+                                    <li><a href="cyber2d.html">DataPhishing</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+
+
+
+    </section>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var head = document.getElementById("head")
+        function hideMenu() {
+            head.style.right = "-200px";
+        }
+        function showMenu() {
+            head.style.right = "92px";
+        }
+    </script>
+    <section>
+        <div class="cyber" data-aos="fade-up">
+            <h1>Mobile apps are watching you:</h1>
+            <p>Mobile apps can track your location and sell the data to third parties. What can you do about it?</p>
+            <hr style="width: 90%;position: relative; left: 3%;border-top: 1px solid rgba(0, 0, 0, 0.1);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
+            <br><br>
+            <p>
+                Some mobile apps track your location — and secretly report it to services that sell the data. You almost
+                certainly use at least one such app without even knowing it. How do you find out which apps may be
+                problematic — and what can you do about it?
+            </p>
+            <h1>
+                Which mobile apps are tracking you?
+            </h1>
+            <p>
+                When he saw a visualization of spring breakers from just one beach in Florida dispersing all over the US
+                during the COVID-19 pandemic, Kaspersky GReAT’s director, Costin Raiu thought not about the coronavirus,
+                but about apps that track their users’ locations. The report used research including location data from
+                X-Mode. But where did X-Mode get the data?
+                <br><br>
+                Well, X-Mode distributes an SDK — a component developers can embed in their apps — and, depending on the
+                number of regular app users, pays developers monthly to include it. In return, the SDK harvests location
+                data, as well as some data from the smartphone sensors, such as the gyroscope, and sends it to X-Mode
+                servers. Later, X-Mode sells the allegedly anonymized data to whoever wants to buy it.
+                <br><br>
+                X-Mode claims the SDK doesn’t have a huge impact on battery life, using only about 1%–3% of the charge,
+                so users basically won’t even notice the SDK and won’t be annoyed by it. X-Mode also says that
+                harvesting data this way is “most definitely legal” and that the SDK is fully GDPR compliant.
+                <br><br>
+            </p>
+            <h1>How many of those tracking apps are there?</h1>
+            <p>
+                Raiu asked himself: Was he being tracked that way? The easiest way to find out was to identify the
+                addresses of the command-and-control servers the tracking SDKs used — and to monitor outbound network
+                traffic from his device. If an app on his smartphone was communicating with at least one such server,
+                that would mean that he was in fact being tracked. To complete the task, Raiu needed to learn the server
+                addresses. His search became the basis for his talk at this year’s SAS@home conference.
+                <br><br>
+                After some reverse engineering, some guesswork, some decryption, and some poking around, he found them —
+                and wrote a piece of code that helped him detect if an app was trying to access them. Basically, he
+                found, if an app has a certain line of code, then it uses the tracking SDK.
+                <br><br>
+                Raiu found more than 240 distinct apps with the SDK embedded. In total, those apps have been installed
+                more than 500 million times. If we go with a rather rough assumption that the average user installed
+                such an app only once, that would mean about 1 in 16 people worldwide has such a tracking app installed
+                on their device. That’s … a lot. Your chance of being one of them is, well, 1/16.
+                <br><br>
+                What’s more, X-Mode is just one of dozens of companies in this industry.
+                <br><br>
+                In addition to that, any app can contain more than just one SDK. For example, while Raiu was looking at
+                an app that included the X-Mode SDK in question, he discovered five other components from other
+                companies that were also collecting location data. Obviously, the developer was trying to squeeze as
+                much money as possible out of the app — and it wasn’t even a free app. Paying for an application doesn’t
+                mean, unfortunately, that its creators are not trying to get more money out of the deal.
+                <br><br>
+            </p>
+            <h1>What can you do to avoid the tracking?</h1>
+            <p>
+                The problem with these tracking SDKs is that when you download an app, you just don’t know whether it
+                contains such location tracking components. The app may have a legitimate reason to ask for your
+                location — many apps rely on location to function properly. But such an app might also sell your
+                location data — it’s hard to tell.
+                <br><br>
+                To help tech-savvy users minimize their odds of being tracked, Raiu has created a list of the C&C
+                servers those tracking SDKs use. You’ll find it on his personal GitHub page. A RaspberryPi computer with
+                Pi-hole and WireGuard software installed can help sniff the traffic in your home network and expose the
+                apps that try to contact such servers.
+                <br><br>
+                The above probably goes a bit beyond most peoples’ tech skills, but you can at least lower your chances
+                of being tracked by such apps and services by limiting apps’ permissions.
+                <br><br>
+                Check which apps have permission to use your location. You can find information about how to do that on
+                Android 8 here; later versions do not differ significantly. And here’s how to stop location tracking on
+                iOS. If you don’t think that an app really needs such a permission, don’t hesitate to revoke it.<br><br>
+                Give apps permission to use your location only while you’re using them. Most apps don’t need to know
+                your location when they are running in the background, making this setting ideal for many of them.<br><br>
+                Delete apps you don’t use anymore. If you haven’t opened an app in, say, a month or more, it’s probably
+                safe to assume you don’t need it at all; and if you need it in the future, you can always reinstall it.<br><br>
+                Keep in mind that location-tracking components are certainly not the worst things that can be found in
+                an app, even legitimate apps distributed through official stores. Some apps may be outright malicious,
+                and some may become bad after getting sold or just being updated. That is why we recommend using a
+                robust security solution such as Kaspersky for Android, which protects you against all kinds of mobile
+                threats.
+                <br><br>
+            </p>
+    </section>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/pages.css">
+    <link rel="stylesheet" media="screen and (max-width: 980px)" href="../static/phone.css">
+    <link rel="stylesheet" href="../static/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="../static/activePage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        <section id="header">
+            <nav id="navbar">
+                <div class="navheading">
+                    <img src="../static/BIGLOGO.jpg" alt="">
+                    <a href="base.html">
+                        <h1>PrivacyControl</h1>
+                    </a>
+                </div>
+                <div class="head" id="head">
+                    <ul>
+                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+    
+                        <li class="btnn"><a href="base.html">Home</a></li>
+                        <li class="btnn"><a href="about.html">About</a></li>
+                        <li class="btnn"><a href="service.html">Services </a>
+                            <ul>
+                                <li><a href="password.html">Password Manager</a></li>
+                                <li><a href="index.html">Password Generator</a></li>
+                                <li><a href="index1.html">Password Checker</a></li>
+                                <li><a href="qr.html">QR Code</a></li>
+                            </ul>
+                        </li>
+                        <li class="btnn"><a href="pages.html">Topics</a>
+                            <ul>
+                                <li><a href="cyber.html">CyberSecurity</a></li>
+                                <li><a href="cyber1.html">Hacking</a></li>
+                                <li><a>DataProtection</a>
+                                    <ul>
+                                        <li><a href="cyber2.html">DataBreach</a></li>
+                                        <li><a href="cyber2b.html">DataEncryption</a></li>
+                                        <li><a href="cyber2c.html">DataDiddling</a></li>
+                                        <li><a href="cyber2d.html">DataPhishing</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="privacy.html">Privacy</a></li>
+                            </ul>
+                        </li>
+                        <li class="btnn"><a href="contact.html">Contact</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="pag" data-aos="fade-up">
+                    <h1>CYBER PAGES</h1>
+                    <div class="pa-text">
+                        <a href="base.html">HOME</a>  >
+                    <H2>CYBER PAGES</H2>
+                    </div>
+                    
+                </div>
+                
+        </section>
+
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            var head = document.getElementById("head")
+            function hideMenu() {
+                head.style.right = "-200px";
+            }
+            function showMenu() {
+                head.style.right = "92px";
+            }
+        </script>
+        <section>
+            <div class="ps-text" data-aos="fade-up">
+                <h1>THESE PAGES PROVIDES INFORMATION ABOUT CYBERSECURITY BREACHES</h1>
+                
+            </div>
+        </section>
+</body>
+</html>

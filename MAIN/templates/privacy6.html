@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/cyber.css">
+    <link rel="stylesheet" media="screen and (max-width: 980px)" href="../static/phone.css">
+    <link rel="stylesheet" href="../static/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <script defer src="../static/activePage.js"></script>
+    <!-- <link rel="stylesheet" href="../static/phone.css"> -->
+    <title>Cyber</title>
+</head>
+
+<body>
+    <section id="header">
+        <nav id="navbar2j">
+            <div class="navheading">
+                <img src="../static/BIGLOGO.jpg" alt="">
+                <a href="base.html">
+                    <h1>PrivacyControl</h1>
+                </a>
+            </div>
+            <div class="head" id="head">
+                <ul>
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                    <li class="btnn"><a href="base.html">Home</a></li>
+                    <li class="btnn"><a href="about.html">About</a></li>
+                    <li class="btnn"><a href="service.html">Services </a>
+                        <ul>
+                            <li><a href="password.html">Password Manager</a></li>
+                            <li><a href="index.html">Password Generator</a></li>
+                            <li><a href="index1.html">Password Checker</a></li>
+                            <li><a href="qr.html">QR Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="pages.html">Topics</a>
+                        <ul>
+                            <li><a href="cyber.html">CyberSecurity</a></li>
+                            <li><a href="cyber1.html">Hacking</a></li>
+                            <li><a>DataProtection</a>
+                                <ul>
+                                    <li><a href="cyber2.html">DataBreach</a></li>
+                                    <li><a href="cyber2b.html">DataEncryption</a></li>
+                                    <li><a href="cyber2c.html">DataDiddling</a></li>
+                                    <li><a href="cyber2d.html">DataPhishing</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+
+
+
+    </section>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var head = document.getElementById("head")
+        function hideMenu() {
+            head.style.right = "-200px";
+        }
+        function showMenu() {
+            head.style.right = "92px";
+        }
+    </script>
+    <section>
+        <div class="cyber" data-aos="fade-up">
+            <h1>How to keep spies off your phone — in real life, not the movies:</h1>
+            <p>How paranoid employers and jealous partners can spy on you, and why chip bags are best left to movie
+                heroes.</p>
+            <hr style="width: 90%;position: relative; left: 3%;border-top: 1px solid rgba(0, 0, 0, 0.1);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
+            <br><br>
+            <p>In the new Terminator movie, Sarah Connor puts her phone inside an empty bag of chips to hide her
+                movements from the bad guys. Our recent experiment showed that this method is actually workable (with
+                some provisos): A couple of foil bags do indeed jam radio signals from cell towers, satellites (such as
+                GPS), and wireless networks (such as Wi-Fi or Bluetooth). But do people actually spy on other people
+                through these networks? Let’s investigate.<br><br></p>
+            <h1>Spying over radio: GPS, cellular, and Wi-Fi</h1>
+            <p>Sarah Connor was concerned primarily about GPS signals. At first glance, that’s logical; we use
+                satellites to determine the exact location of a device. In reality, however, things aren’t that
+                straightforward.
+                <br><br>
+            </p>
+            <h1>Can you be tracked by GPS?</h1>
+            <p>Phones do not transmit any information to satellites. The system is entirely unidirectional: The phone
+                doesn’t transmit anything through GPS, but rather picks up a signal from several satellites, analyzes
+                how much time the signal took to arrive, and calculates its coordinates.
+                <br><br>
+                So, tracking someone using only GPS is simply not possible. One would need to send those coordinates out
+                from the phone, and the GPS standard does not provide for that.
+                <br><br>
+            </p>
+            <h1>Tracking through cellular networks</h1>
+            <p>With cell towers, unlike GPS satellites, communication is bidirectional. And although determining your
+                location is not the main task of a cellular network, it can lend a hand. Broadly speaking, someone who
+                knows which tower is currently serving the phone can determine its location. However, accessing that
+                data is extremely difficult.
+                <br><br>
+                Recently, researchers found a rather interesting way of discovering information about this nearest tower
+                — through an intricate SIM card vulnerability that can be exploited using an ordinary computer and USB
+                modem. However, this method requires specialized technical know-how, and so it is deployed only in
+                high-cost, targeted attacks.
+                <br><br>
+                Another consideration is that cell-tower-based geolocation is not all that accurate; it yields the
+                general area, not exact coordinates. And whereas in a city that general area might be relatively small
+                (your location can be found to an accuracy of several hundred yards), in rural areas, where the distance
+                between cell towers is measured in miles, the margin of error can be enormous.
+                <br><br></p>
+                <h1>Tracking with Wi-Fi</h1>
+                <p>In theory, your movements can also be tracked using Wi-Fi — when you log in to a public network, it receives certain information about you and the device you’re using. Moreover, smartphones broadcast information about themselves to find available networks, and they can be tracked even if you are not connected to anything.
+                    <br><br>
+                    The sole inconvenience is that Wi-Fi tracking is possible only when you are in the vicinity of an access point. So, although this method is practiced, it is not used for tracking specific people, rather for general monitoring of people’s behavior in a certain area. For example, some shopping malls use this kind of tracking to create individual ads based on data about visits to particular stores.
+                    <br><br></p>
+                <h1>How people are tracked in reality: Operating systems and apps</h1>
+                <p>Spying is outright impossible by GPS, too inconvenient using Wi-Fi, and expensive and difficult through cellular networks. However, even if you are not an investigative journalist or the head of an international corporation, that doesn’t mean no one but nosy advertisers is snooping on you or harvesting your data. Your GPS coordinates, personal messages, and other data might well be of interest to a mistrustful boss or jealous partner. Here’s how such individuals can actually track you.<br><br></p>
+                <h1>They can hack into your Apple or Google account</h1>
+                <p>By default, iOS and Android collect your data. They store it in, among other places, your Apple or Google account — in the clouds. If your iCloud or Google Account gets hacked, everything that system meticulously harvested will fall into the hands of the attacker. Therefore, we recommend making sure your accounts are properly protected. At the very least, use a strong, unique password and enable two-factor authentication. At the same time, you can configure what information about you is stored in these accounts — for example, consider turning off location history.</p>
+                <h1>They can view metadata, geotags, and check-ins</h1>
+                <p>Unfortunately, sometimes users themselves make it easier to track them, for example, by posting photos with metadata — information about where and when the image was taken, on which camera, etc. — on social networks. Some sites delete this information when photos are uploaded, but not all. If not, anyone will be able to see the history of the picture.
+                    <br><br>
+                    Your check-ins and geotags also play into the hands of cybercriminals. Don’t use them if you want to prevent others from tracking your movements.
+                    <br><br></p>
+                <h1>They can install spyware on your smartphone</h1>
+                <p>Many malicious apps exist to collect and transmit information from your device to their controllers. They can track not only your movements, but also your messages, calls, and much more as well.
+                    <br><br>
+                    Such malware usually penetrates the smartphone in the guise of a harmless app or by exploiting system vulnerabilities. It operates in the background and works hard to evade detection, so in most cases, the victim is not even aware that something is wrong with their mobile phone.<br><br></p>
+                <h1>They can use spying apps — legally!</h1>
+                <p>Alas, not all spying apps are considered malware. The category of legal spyware known as stalkerware, or spouseware, is often positioned as a parental control tool. In some countries, the use of such spying apps is lawful, and in others their legal status is undefined. In any case, these apps are freely sold on the Internet and tend to be relatively inexpensive — in other words, it’s accessible to everyone from watchful employers to jealous partners.
+                    <br><br>    
+                    True, stalkerware needs to be installed manually on a victim’s device, but that’s no impediment if your gadget is easy to unlock. In addition, some vendors sell smartphones with spying apps already installed. They can be given as a present or a company device.
+                    <br><br>
+                    In terms of general functionality, legal spying apps differ little from malicious spyware. Both operate surreptitiously and leak all kinds of data, such as geolocation, messages, photos, and much more.
+                    <br><br>
+                    Worse, they often do so without any concern for security, so it’s not only the person who installed the stalkerware on your smartphone who can read your WhatsApp messages or track your movements — hackers can intercept the data as well.
+                    <br><br></p>
+    </section>

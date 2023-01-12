@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: url(Untitled.jpeg) no-repeat center center/cover;
+    
+}.navheading{
+    position: fixed;
+    display: flex;
+    background-color: black;
+    color: white;
+    left: 10%;
+    text-align: center;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 1;
+}
+.navheading a{
+    text-decoration: none;
+}
+.navheading h1{
+    color:#00ffc9;
+    font-size: 1.9rem;
+    padding: 0px 15px 0px 0px;
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+}
+.navheading img{
+    border-bottom-left-radius: 5px;
+}
+.head{
+    position: fixed;
+    display: flex;
+    color: white;
+    right: 10%;
+    z-index: 1;
+}
+.head ul{
+    background-color: black;
+    border-radius:0px 0px 10px 10px;
+    padding:0px 3px;
+    /* border: 1px solid wheat; */
+    border-top: 0px;
+}
+.head ul ul{
+    position: absolute;
+    top: 41px;
+    display: none;
+}
+.head ul ul ul{
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    
+    display: none;
+}
+.head ul ul li{
+    
+    float: none;
+    display: list-item;
+    position: relative;
+}
+.head ul ul ul li{
+    position: relative;
+    float: none;
+    display: list-item;
+    display: block;
+    /* left: 150px; */
+}
+
+.head ul li:hover > ul{
+    display: block;
+}
+.head ul ul li:hover > ul{
+    display: block;
+}
+.head ul li{
+    /* flex: 1; */
+    /* text-align: right; */
+    display: inline-block;
+    z-index: 2;
+    list-style: none;
+    padding: 8px 8px;
+}
+
+.head ul li a{
+    font-size: 1.5rem;
+    padding: 8px 6px;
+    color: #00ffc9;
+    /* z-index: 2; */
+    text-decoration: none;
+}
+.head ul ul li a{
+    font-size: 1.5rem;
+    padding: 8px 6px;
+    color: #00ffc9;
+    text-decoration: none;
+}
+.head ul li a:hover{
+    background-color: rgb(89, 55, 109);
+    /* color: black; */
+    border-radius:0px 0px 7px 7px;
+}
+.head ul ul li a:hover{
+    background-color: rgb(89, 55, 109);
+    /* color: black; */
+    border-radius:0px 0px 7px 7px;
+}
+.active{
+    background-color: rgb(81, 56, 95);
+    border-radius:0px 0px 7px 7px;
+}
+
+.head ul ul li a{
+    text-align: left;
+    padding-left: 0%;
+}
+
+.hom{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    top: 35%;
+}
+.hom h1{
+    /* padding: 20px;
+    margin: 10px; */
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+}
+.hom h3{
+    display: inline;
+    padding-top: 10px;
+    margin-top: 10px;
+    color: #00ffc9;
+}
+.h-text a{
+    text-decoration: none;
+    color: #00ffc9;
+    font-size: 20px;
+}
+.h-text a:hover{
+    transition: 0.5s ease-out;
+}
+.hom h2{
+    display: inline;
+    padding-top: 10px;
+    margin-top: 10px;
+    color: white;
+}
+nav .fa-solid{
+    display: none;
+    color: black;
+}
+
+#About{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    margin-top: 10px;
+}
+.aboutimg1{
+    width: 50%;
+    background: url(Polygonbg5.jpg) ;
+    margin-bottom: 12px;
+    margin-right: 10px;
+}
+.aboutimg1 img{
+    width: 80%;
+    display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.abouttext{
+    width: 50%;
+    color: white;
+    font:300px;
+    /* background-color: #00ffc9; */
+    display: block;
+    margin-top: 60px;
+
+    margin-left: 50px;
+    margin-right: auto;
+}
+.abouttext h2{
+    color: #00ffc9;
+}
+.abouttext h1{
+    font-size: 35px;
+    
+}
+.abouttext p{
+    font-size: large;
+    font-weight: bolder;
+    color: #7a7fdb
+}
+.abouttext span{
+    font-size: large;
+    font-weight: bolder;
+}
+.abouttext button{
+    cursor: pointer;
+    width: 30%;
+    height: 8vh;
+    margin-top: 10px;
+    background-color: #484dad;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+.abouttext button:hover{
+    background-color: #00ffc9;
+    color: #000;
+}
+.abouttext button:hover{
+    color: black;
+}
+.abouttext button{
+    transition: 1s ease-out;
+    font-size: 1.5rem;
+    color: #00ffc9;
+}
+
+.about-text{
+    width: 100%;
+    height: 50vh;
+    background-color: #000;
+    display: flex;
+    /* margin-top: 10px; */
+}
+.about-text1{
+    width: 40%;
+    color: white;
+    font-size:20px;
+    /* background-color: #00ffc9; */
+    color: #00ffc9;
+    display: block;
+    margin-top: 60px;
+
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+.about-text2{
+    width: 40%;
+    color: white;
+    font-size:20px;
+    color: #00ffc9;
+    /* background-color: #00ffc9; */
+    display: block;
+    margin-top: 60px;
+
+    margin-left: 50px;
+    margin-right: auto;
+}
+.aboutimg img:hover{
+    /* background: crimson; */
+    opacity: 0.85;
+    fill: crimson;
+}
+#Contact{
+    width: 100%;
+    height: 100vh;
+    background: url(Untitled.jpeg) center center no-repeat ;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+.c-head{
+    position: relative;
+    display: inline-block;
+    background-color:#333030;
+    color:#00ffc9;
+    border-radius: 0px 0px 10px 10px;
+    width: 20%;
+    height: 45px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.c-head h1{
+    font-size: 1.9rem;
+    padding: 0px 18px;
+    font-family: 'Kaushan Script', cursive;
+}
+.c1{
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+hr{
+    border: 1px solid;
+    width: 70%; 
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    justify-content: space;
+    text-align: center;
+    padding-top: 40px;
+}
+.table1{
+    padding: 20px 40px;
+} 
+.table1 h3{
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    text-align: initial;
+}
+.table2{
+    padding: 20px 40px;
+} 
+.table2 h3{
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    text-align: initial;
+}
+.table3{
+    padding: 20px 40px;
+} 
+.table3 h3{
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    text-align: initial;
+}
+.table4 h3{
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    text-align: initial;
+}
+.table4{
+    text-align: initial;
+}
+.table4{
+    padding: 20px 40px;
+} 
+.table1 li{
+    list-style: none;
+    line-height: 2em;
+    text-align: initial;
+    font-size: 18px;
+}
+.table2 li{
+    font-size: 18px;
+    list-style: none;
+    line-height: 2em;
+    text-align: initial;
+}
+.table2 li a{
+    cursor: pointer;
+}
+.table3 li{
+    font-size: 18px;
+    list-style: none;
+    line-height: 2em;
+    text-align: initial;
+}
+.table4 li{
+    list-style: none;
+    line-height: 2em;
+    text-align: initial;
+}
+.table4 .img1 img{
+    width: 50%;
+    height: 90%;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+.table4 .img2 img{
+    width: 50%;
+    height: 90%;
+    border-radius: 15px;
+}
+.bottom{
+    
+    /* margin-bottom: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}

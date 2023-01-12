@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/contact.css">
+    <link rel="stylesheet" media="screen and (max-width: 980px)" href="../static/phone.css">
+    <link rel="stylesheet" href="../static/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <script defer src="../static/activePage.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <section id="header">
+        <nav id="navbar">
+            <div class="navheading">
+                <img src="../static/BIGLOGO.jpg" alt="">
+                <a href="base.html">
+                    <h1>PrivacyControl</h1>
+                </a>
+            </div>
+            <div class="head" id="head">
+                <ul>
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                    <li class="btnn"><a href="base.html">Home</a></li>
+                    <li class="btnn"><a href="about.html">About</a></li>
+                    <li class="btnn"><a href="service.html">Services </a>
+                        <ul>
+                            <li><a href="password.html">Password Manager</a></li>
+                            <li><a href="index.html">Password Generator</a></li>
+                            <li><a href="index1.html">Password Checker</a></li>
+                            <li><a href="qr.html">QR Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="pages.html">Topics</a>
+                        <ul>
+                            <li><a href="cyber.html">CyberSecurity</a></li>
+                            <li><a href="cyber1.html">Hacking</a></li>
+                            <li><a>DataProtection</a>
+                                <ul>
+                                    <li><a href="cyber2.html">DataBreach</a></li>
+                                    <li><a href="cyber2b.html">DataEncryption</a></li>
+                                    <li><a href="cyber2c.html">DataDiddling</a></li>
+                                    <li><a href="cyber2d.html">DataPhishing</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+
+
+            <div class="con" data-aos="fade-up">
+                <h1>CONTACT</h1>
+                <div class="c-text">
+                    <a href="base.html">HOME</a> >
+                    <H2>CONTACT</H2>
+                </div>
+
+            </div>
+    </section>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var head = document.getElementById("head")
+        function hideMenu() {
+            head.style.right = "-200px";
+        }
+        function showMenu() {
+            head.style.right = "92px";
+        }
+    </script>
+    <section id="message">
+        <div class="wrapper" data-aos="fade-up">
+            <header>Send us a Message</header>
+            <form action="." method="POST" name="contactForm" onsubmit="return validateForm()">
+                {% csrf_token %}
+                <div class="dbl-field"  data-aos="fade-up">
+                    <div class="field"  data-aos="fade-up">
+                        <input type="text" name="name" placeholder="Enter your name">
+                        <i class='fas fa-user'></i>
+                    </div>
+                    <div class="field"  data-aos="fade-up">
+                        <input type="text" name="email" placeholder="Enter your email">
+                        <i class='fas fa-envelope'></i>
+                    </div>
+                </div>
+                <div class="dbl-field"  data-aos="fade-up">
+                    <div class="field" data-aos="fade-up">
+                        <input type="text" name="phone" placeholder="Enter your phone">
+                        <i class='fas fa-phone-alt'></i>
+                    </div>
+                    <div class="field" data-aos="fade-up">
+                        <input type="text" name="website" placeholder="Enter your website">
+                        <i class='fas fa-globe'></i>
+                    </div>
+                </div>
+                <div class="message" data-aos="fade-up">
+                    <textarea placeholder="Write your message" name="message"></textarea>
+                    <!-- <i class="material-icons">message</i> -->
+                </div>
+                <hr style="width: 100%;border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid white;">
+                <div class="button-area">
+                    <button type="submit" data-aos="fade-up">Send Message</button>
+                    <span></span>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <script>
+        function validateForm(){
+            let name = document.forms['contactForm']['name'].value;
+            let email = document.forms['contactForm']['email'].value;
+            let phone = document.forms['contactForm']['phone'].value;
+            let website = document.forms['contactForm']['website'].value;
+            let message = document.forms['contactForm']['message'].value;
+      
+            if (name == '' || hasNumber(name)){
+                alert('Name must be filled out and must only contain letters');
+                return false;
+            } else if (email == '' && phone == ''){
+                alert('Email or phone must be filled out');
+                return false;
+            } else if (!(email.includes('@'))){
+                alert('Email does not seem to be valid');
+                return false;
+            }else if (isNaN(phone)){
+                alert('Phone number seems to contain letters');
+                return false;
+            } else if (message == ''){
+                alert('Message must be filled out');
+                return false;
+            } else {
+                // confirm or cancel
+                return confirm('Do you really want to sent the message?')
+            }
+        }
+      
+        function hasNumber(myString) {
+            return /\d/.test(myString);
+        }
+      </script>
+      
+    <section id="Contact">
+
+        <div class="c-head" data-aos="fade-up">
+
+            <h1>PrivacyControl</h1>
+        </div>
+        <div class="c1" data-aos="fade-up">
+            <h2>An Immersive Security Experience</h2>
+        </div>
+        <hr>
+        <div class="table" data-aos="fade-up">
+            <div class="table1">
+                <h3>Contact</h3>
+                <ul>
+                    <li>skfarzaan36@gmail.com</li>
+                    <li>Phone: 8080851626</li>
+                    <li>500 Terry Francois St</li>
+                    <li>San Francisco, CA 94158</li>
+                </ul>
+            </div>
+            <div class="table2">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="base.html"></a>Home</li>
+                    <li><a href="about.html"></a>About</li>
+                    <li><a href="service.html"></a>Services</li>
+                    <li><a href="pages.html"></a>Pages</li>
+                    <li><a href="contact.html"></a>Contact</li>
+                    <li><a href="#"></a>Privacy Policy</li>
+                    <li><a href="#"></a>Terms & Condition</li>
+                </ul>
+            </div>
+            <div class="table3">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="#Discord"></a>Discord</li>
+                    <li><a href="#Twitch"></a>Twitch</li>
+                    <li><a href="#Facebook"></a>FAcebook</li>
+                    <li><a href="#Youtube"></a>Youtube</li>
+                    <li><a href="#Twitter"></a>Twitter</li>
+                    <li><a href="#LinkedIn"></a>LinkedIn</li>
+                </ul>
+            </div>
+            <div class="table4">
+                <h3>Find Us On</h3>
+                <ul>
+                    <li><a href="#playstore"></a>Playstore</li>
+                    <li><a href="#playstore"></a>google</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+       
+    </section>
+    <div class="bottom" style="background-color: #181818; text-align: center; color: white;">
+        &copy; All Rights Reserved. Created by @skfarzaan
+    </div>
+</body>
+
+</html>

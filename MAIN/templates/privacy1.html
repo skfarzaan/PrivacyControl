@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/cyber.css">
+    <link rel="stylesheet" media="screen and (max-width: 980px)" href="../static/phone.css">
+    <link rel="stylesheet" href="../static/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <script defer src="../static/activePage.js"></script>
+    <!-- <link rel="stylesheet" href="../static/phone.css"> -->
+    <title>Cyber</title>
+</head>
+
+<body>
+    <section id="header">
+        <nav id="navbar2e">
+            <div class="navheading">
+                <img src="../static/BIGLOGO.jpg" alt="">
+                <a href="base.html">
+                    <h1>PrivacyControl</h1>
+                </a>
+            </div>
+            <div class="head" id="head">
+                <ul>
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                    <li class="btnn"><a href="base.html">Home</a></li>
+                    <li class="btnn"><a href="about.html">About</a></li>
+                    <li class="btnn"><a href="service.html">Services </a>
+                        <ul>
+                            <li><a href="password.html">Password Manager</a></li>
+                            <li><a href="index.html">Password Generator</a></li>
+                            <li><a href="index1.html">Password Checker</a></li>
+                            <li><a href="qr.html">QR Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="pages.html">Topics</a>
+                        <ul>
+                            <li><a href="cyber.html">CyberSecurity</a></li>
+                            <li><a href="cyber1.html">Hacking</a></li>
+                            <li><a>DataProtection</a>
+                                <ul>
+                                    <li><a href="cyber2.html">DataBreach</a></li>
+                                    <li><a href="cyber2b.html">DataEncryption</a></li>
+                                    <li><a href="cyber2c.html">DataDiddling</a></li>
+                                    <li><a href="cyber2d.html">DataPhishing</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </li>
+                    <li class="btnn"><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+
+
+
+    </section>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var head = document.getElementById("head")
+        function hideMenu() {
+            head.style.right = "-200px";
+        }
+        function showMenu() {
+            head.style.right = "92px";
+        }
+    </script>
+    <section>
+        <div class="cyber" data-aos="fade-up">
+            <h1>Data Safety instead of App Permissions:</h1>
+            <p>Google Play’s app descriptions have a new Data Safety section now. We explain why this isn’t such great
+                news.</p>
+            <hr style="width: 90%;position: relative; left: 3%;border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
+            <br><br>
+            <p>
+                Starting July 20, all developers who publish Android apps in the Google Play store must detail what data
+                they collect and how they use it. However, this undeniably positive innovation has been rather
+                overshadowed by the forces of “optimization”: now, before installing an app, you have no way of knowing
+                what data sources it’s tapping. We give a brief overview of what’s changed and explain how to assess the
+                risks to your privacy going forward.
+                <br><br>
+            </p>
+            <h1>What’s changed</h1>
+            <p>
+            In April of this year, Google implemented a new feature on Google Play to allow developers to specify
+            what data apps collect and for what purposes. As of July 20, this option became mandatory: developers
+            that don’t add such descriptions risk having their apps removed from the store.
+            <br><br>
+            This positive change follows a similar move by Apple. Before, Google allowed you to assess an app’s
+            interest in your personal data only indirectly — by examining the list of permissions it requested.
+            <br><br>
+            Sometimes it needs permissions to function properly. For example, you can grant a mail app access to your
+            contacts list. But you don’t have to! And remember, most permissions given to apps can be revoked at any
+            time. But don’t be surprised if some features no longer work afterward.
+            <br><br>
+            On July 13, shortly before the introduction of the new rule for developers, someone tweeted about a small
+            but significant change: the new Data Safety section was added in the app descriptions, but the app
+            permissions list was removed at the same time. A somewhat controversial move, it can surely be said.
+            </p>
+            <h1>Why Data Safety is no substitute for App Permissions</h1>
+            <p>
+                Sure, the new section in the description can help you decide whether or not to install the app. For
+                example, if a simple tool wants your name, e-mail address and access to photos, it makes sense to look
+                for another one that will do the same job without asking for anything.
+                <br><br>
+                However, Data Safety and App Permissions are not quite the same thing. The former addresses the
+                question: What data will be collected? The latter specifies the sources of this data. This can be
+                important for assessing how critical this data collection is for you. Let’s say that information about
+                your contacts can be collected from your friends list in the app itself, or from the contacts list on
+                your phone. Clearly, these can be very different lists — just imagine, for example, it’s an online
+                dating app.
+                <br><br>
+                And most importantly: Permissions in the description on Google Play were prescribed automatically, based
+                on the actual features of the app in question. The Data Safety section, on the other hand, is filled out
+                by the developers themselves, manually. Google can only hope they will do so in good faith.
+                <br><br>
+            </p>
+            <h1>How to live with the changes</h1>
+            <p>
+                The purpose of the Data Safety section is to provide users with more information about how apps affect
+                privacy. At the same time, however, Google has reduced the amount of information for assessing this.
+                When browsing apps on Google Play, you will no longer be guided by questions like “Why does an alarm
+                clock need access to my photos and location?” Such data is no longer provided.
+                <br><br>
+                That said, for clarity’s sake, we should point out that only the list of permissions in the app
+                descriptions on Google Play has disappeared. The Android permissions mechanism has not gone anywhere. As
+                before, you can still permit or forbid an app to access certain sources of information within the
+                operating system: camera, geolocation, contacts list, etc.
+                <br><br>
+                Therefore, we recommend a two-step procedure for assessing the potential privacy risk on Android. First,
+                take a close look in the Data Safety section on Google Play at what data the app will collect about you.
+                If you’re happy, install the app, then check what permissions it wants after installation. If something
+                doesn’t feel right, don’t give unnecessary access to your data (or revoke it if already granted).
+                <br><br>
+                Bear in mind that neither Android’s existing privacy controls, nor the above-described innovation will
+                solve the (albeit rare) problem of malware on Google Play. Therefore, as ever, we advise installing a
+                reliable security solution on your Android smartphone.
+                <br><br>
+            </p>
+        </div>
+    </section>
